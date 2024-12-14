@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Niche Emirates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+
+<body class="body-width">
+    <header class="luxury-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.webp" alt="Logo" />
+            </a>
+        </div>
+        <div class="burger-menu" id="burgerMenu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="slider-nav" id="sliderNav">
+            <span class="close-btn" id="closeNav">&times;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="home-top-image-container">
+        <img class="fader-element home-top-image" src="images/10.jpg" alt="Top Image">
+    </div>
+    <p style="text-align: center; padding: 0 40px;" class="fader-element body-text">
+        Niche Emirates is B2B company for Heavy Equipment Owners. We are transforming the machinery industry by creating
+        innovative solutions that simplify the acquisition and maintenance of equipment. By offering a wide selection of
+        new, used, and refurbished parts, we empower equipment owners to maximize the lifespan and efficiency of their
+        machines. Our commitment is to deliver the right parts and services at the right time, ensuring seamless
+        operations
+        and reducing downtime for our customers.
+    </p>
+
+    <div class="fader-element services-left-container">
+        <div>
+            <h2>OUR MISSION
+
+            </h2>
+            <p>To provide high-quality new, used, and refurbished machinery parts that empower industries to maximize
+                efficiency and sustainability. By combining expertise, reliable service, and a customer-centric
+                approach, we strive to minimize downtime and deliver cost-effective solutions tailored to the diverse
+                needs of our clients.
+
+            </p>
+        </div>
+        <img src="images/12.jpg">
+    </div>
+    <div class="fader-element services-right-container">
+        <img src="images/13.jpg">
+        <div>
+            <h2>OUR VISION
+
+            </h2>
+            <p>To become the leading global provider of machinery parts, known for our innovation, quality, and
+                commitment to sustainability. We aim to revolutionize the industry by promoting a circular economy and
+                creating value for customers through exceptional products, services, and partnerships.
+
+            </p>
+        </div>
+    </div>
+    <div class="fader-element services-left-container">
+        <div>
+            <h2>BRAND VALUES
+            </h2>
+            <p>Innovation: Continuously evolving to offer smarter, more efficient ways to source and maintain machinery
+                parts.
+                Customer-Centric: Tailoring solutions to meet unique operational needs and fostering long-term
+                partnerships.
+                Speed and Reliability: Focused on minimizing downtime by ensuring timely delivery of the right parts and
+                services.
+                Cost Efficiency: Delivering cost-effective solutions while maintaining high standards of service and
+                product quality.
+                Expertise: Backed by years of experience, providing expert advice and reliable solutions for diverse
+                industries.
+
+            </p>
+        </div>
+        <img src="images/11.jpg">
+    </div>
+    <footer style="margin-top: 30px;">
+        <div class="fader-element home-contact-container">
+            <div class="get-in-touch">
+                <p class="home-get-in-touch-heading">GET IN TOUCH</p>
+                <p class="home-get-in-touch-subheading">ADDRESS</p>
+                <p class="home-get-in-touch-content">PO Box 81605, Dubai, UAE</p>
+                <p class="home-get-in-touch-subheading">CONTACT US</p>
+                <p class="home-get-in-touch-content">+971 4297 8868</p>
+                <a class="home-get-in-touch-content" href="mailto:info@nicheme.com">info@nicheme.com</a>
+            </div>
+            <div class="form-container">
+                <p class="home-get-in-touch-heading">SEND US A MESSAGE</p>
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="from_name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Company" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="message" rows="4" placeholder="Description"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Send</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script>
+        emailjs.init("0y-54eaYngDG_MT3-");
+
+        document.querySelector("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const serviceID = "service_50eqcb4";
+            const templateID = "template_733shvm";
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert("Message sent successfully!");
+                    this.reset();
+                }, (err) => {
+                    alert("Failed to send message. Please try again later.");
+                    console.error("Error:", err);
+                });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all elements with the class 'fader-element'
+            const faderElements = document.querySelectorAll('.fader-element');
+
+            // Options for the Intersection Observer
+            const options = {
+                root: null, // Observe the viewport
+                rootMargin: '0px', // No margin around the root
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            };
+
+            // Callback for when elements enter the viewport
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add the 'visible' class to the element when it enters the viewport
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Stop observing once it has faded in
+                    }
+                });
+            };
+
+            // Create the Intersection Observer
+            const observer = new IntersectionObserver(observerCallback, options);
+
+            // Observe each fader-element
+            faderElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const burgerMenu = document.getElementById("burgerMenu");
+            const sliderNav = document.getElementById("sliderNav");
+            const closeNav = document.getElementById("closeNav");
+
+            // Open or Close Menu on Burger Click
+            burgerMenu.addEventListener("click", () => {
+                sliderNav.classList.toggle("open");
+                burgerMenu.classList.toggle("open");
+            });
+
+            // Close Menu with Close Button
+            closeNav.addEventListener("click", () => {
+                sliderNav.classList.remove("open");
+                burgerMenu.classList.remove("open");
+            });
+
+            // Close Menu by Clicking Outside
+            document.addEventListener("click", (event) => {
+                const isClickInsideMenu = sliderNav.contains(event.target);
+                const isClickOnBurger = burgerMenu.contains(event.target);
+
+                if (!isClickInsideMenu && !isClickOnBurger) {
+                    sliderNav.classList.remove("open");
+                    burgerMenu.classList.remove("open");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
