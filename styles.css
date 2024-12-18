@@ -345,7 +345,8 @@ footer {
     width: 100%;
     margin: 0 auto;
 }
-.home-network-conter-container p{
+
+.home-network-conter-container p {
     color: #000;
 }
 
@@ -525,13 +526,13 @@ textarea {
 
 .services-left-container img,
 .services-right-container img {
-    width: 40%;
+    width: 50%;
     border-radius: 20px;
 }
 
 .services-left-container div,
 .services-right-container div {
-    width: 40%;
+    width: 50%;
 }
 
 @media (max-width: 600px) {
@@ -615,6 +616,12 @@ textarea {
 }
 
 @media(max-width:700px) {
+    .about-us-top-text {
+        margin: 20px auto !important;
+        font-size: .65rem;
+        width: 90% !important;
+        padding: 0 !important;
+    }
 
     .services-left-container,
     .services-right-container {
